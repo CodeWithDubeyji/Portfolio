@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion"
-
+import pfp from '../constants/PFP.avif'
 const Home = () => {
   return (
     <div className='border-b border-neutral-900 pb-4 lg:mb-20'>
@@ -18,7 +18,7 @@ const Home = () => {
         <div className=' w-full lg:w-1/2 lg:-mt-16 lg:pb-16'>
           <div className='flex justify-center lg:justify-end'>
             <motion.div initial={{ opacity: 0, y: -100 }} whileInView={{ opacity: 1, y: 0 }} whileHover={{ scale: 1.2}} whileTap={{scale: 1.1}} transition={{ type: "spring", stiffness: 100, damping: 10, ease: 'easeinout' }} className=' bg-[#85d3c1] h-[500px] w-[500px] rounded-full border-4 border-black flex justify-center items-center'>
-              <motion.img src="src\PFP.avif" alt="pfp" width={354} className='rounded-full' />
+              <motion.img src={pfp} alt="pfp" width={354} className='rounded-full' />
             </motion.div>
           </div>
         </div>

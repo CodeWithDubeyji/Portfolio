@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
+import about from '../constants/parallax_image.jpg'
 const About = () => {
   return (
     <div className='border-b border-neutral-900 pb-16 lg:mb-36'>
@@ -8,7 +8,7 @@ const About = () => {
       <div className="flex flex-wrap">
             <div className="w-full lg:w-1/2">
                 <motion.div initial={{opacity: 0, x: -100}} whileInView={{opacity: 1, x: 0}} transition={{duration: 1, delay: 0}} className="flex items-center justify-center">
-                    <img  className=" w-4/5 rounded-full lg:rounded-3xl" src='src\parallax_image.jpg' alt="aboutPic" />
+                    <img  className=" w-4/5 rounded-full lg:rounded-3xl" src={about} alt="aboutPic" />
                 </motion.div>
             </div>
             <div className='w-full lg:w-1/2 my-auto'>
