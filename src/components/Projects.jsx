@@ -19,7 +19,7 @@ const Projects = () => {
               <motion.h6 className='mb-2 font-semibold'>{project.title}</motion.h6>
               <motion.p className='mb-4 '>{project.description}</motion.p>
               {project.technologies.map((item, index) => (
-                            <motion.span className="mt-2 rounded px-2 py-1 text-purple-800 text-sm font-medium" key={index}>{item}</motion.span>
+                            <motion.span className="mt-2 rounded px-1 lg:px-2 md:px-2 py-1 text-purple-800 font-medium text-[0.6rem] lg:text-sm md:text-sm" key={index}>{item}</motion.span>
                         ))}
             </motion.div>
           </div>

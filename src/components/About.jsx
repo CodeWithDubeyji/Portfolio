@@ -8,12 +8,13 @@ const About = () => {
       <div className="flex flex-wrap">
             <div className="w-full lg:w-1/2">
                 <motion.div initial={{opacity: 0, x: -100}} whileInView={{opacity: 1, x: 0}} transition={{duration: 1, delay: 0}} className="flex items-center justify-center">
-                    <img  className=" w-4/5 rounded-full lg:rounded-3xl" src={about} alt="aboutPic" />
+                    <img  className=" w-4/5 rounded-3xl lg:rounded-3xl" src={about} alt="aboutPic" />
                 </motion.div>
             </div>
             <div className='w-full lg:w-1/2 my-auto'>
                 <div className='flex justify-center lg:justify-end'>
-                    <motion.p initial={{opacity: 0, x: 200}} whileInView={{opacity: 1, x: 0}} transition={{duration: 1, delay: 0}} className='my-2 py-6 max-w-xl text-wrap text-xl -tracking-tight'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus facilis officiis fugiat magnam laboriosam quae aperiam earum, quo veniam sit nobis, voluptatem illo autem accusantium consequuntur assumenda est optio fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque praesentium impedit, excepturi consectetur iusto facere commodi placeat sed velit dignissimos error quas eum, natus id, sint minima facilis iste nisi.</motion.p>
+                    <motion.p initial={{opacity: 0, x: 200}} whileInView={{opacity: 1, x: 0}} transition={{duration: 1, delay: 0}} className='
+                    text-center lg:text-start md:text-center my-2 py-6 max-w-xl text-wrap -tracking-tight text-xs lg:text-base md:text-[0.9rem] sm:text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus facilis officiis fugiat magnam laboriosam quae aperiam earum, quo veniam sit nobis, voluptatem illo autem accusantium consequuntur assumenda est optio fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque praesentium impedit, excepturi consectetur iusto facere commodi placeat sed velit dignissimos error quas eum, natus id, sint minima facilis iste nisi.</motion.p>
                 </div>
             </div>
         </div>
